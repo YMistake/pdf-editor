@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.card {
+  border: none;
+  position: relative;
+  min-width: 300px;
+}
+
+.card-body {
+  padding: 0;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: $text;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}

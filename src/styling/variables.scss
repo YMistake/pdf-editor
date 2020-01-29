@@ -1,0 +1,32 @@
+@import 'color.scss';
+
+$primary: $indigo-400;
+$secondary: $teal-700;
+$danger: $red-500;
+$warning: $yellow-700;
+
+$white: $white;
+$black: $black;
+$dark: $grey-700;
+
+$text: $grey-800;
+$text-disabled: $grey-500;
+$text-active: $primary;
+$title: $primary;
+$fieldset: $secondary;
+
+$sidebar-background: $grey-100;
+$normal-background: $white;
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+

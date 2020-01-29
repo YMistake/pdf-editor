@@ -44,12 +44,40 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/ngx-extended-pdf-viewer/assets",
+                "output": "/assets/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/quill/dist/quill.core.css",
+              "./node_modules/quill/dist/quill.bubble.css",
+              "./node_modules/quill/dist/quill.snow.css",
+              "./node_modules/quill-emoji/dist/quill-emoji.css",
+              "./node_modules/quill-mention/dist/quill.mention.min.css"
             ],
-            "scripts": []
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styling"
+              ]
+            },
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/quill/dist/quill.min.js",
+              "./node_modules/quill-image-resize-module/image-resize.min.js",
+              "./node_modules/quill-video-resize-module/video-resize.min.js",
+              "./node_modules/jspdf/dist/jspdf.min.js",
+              "./node_modules/html2canvas/dist/html2canvas.min.js",
+              "./src/assets/THSarabunNew.js",
+              "./src/assets/THSarabunNew Bold.js",
+              "./src/assets/THSarabunNew Italic.js",
+              "./src/assets/THSarabunNew BoldItalic.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,12 @@
+
+
+<quill-editor
+  [(ngModel)]="html_text"
+  class="editor"
+  [modules]="modules"
+  (onContentChanged)="emit()">
+</quill-editor>
+
+<div id="show"></div>
+
+<button class="btn btn-primary" (click)="export()">export</button>

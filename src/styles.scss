@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./themes.scss";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~ngx-ui-switch/ui-switch.component.scss";
+@import "variables.scss";
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "warning": $warning,
+  "dark": $dark
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
